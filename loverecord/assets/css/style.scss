@@ -39,7 +39,7 @@
   @include fontSmooth;
 
   h1 {
-    font-family: var(--font-secondary);
+    font-family: Consolas;
     color: inherit;
   }
 }
@@ -52,7 +52,7 @@
   font-family: var(--font-primary);
 
   h2 {
-    font-family: var(--font-secondary);
+    font-family: Consolas;
     font-weight: 700;
   }
 }
