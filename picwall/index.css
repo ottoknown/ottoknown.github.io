@@ -77,25 +77,25 @@
    opacity: 0.5;
 }
 .el:nth-of-type(1) .el-bg{
-    background-image: url('picwall/img/4.jpg');
+    background-image: url('./img/1.jpg');
 }
 .el:nth-of-type(2) .el-bg{
-    background-image: url('picwall/img/4.jpg');
+    background-image: url('./img/2.jpg');
 }
 .el:nth-of-type(3) .el-bg{
-    background-image: url('picwall/img/4.jpg');
+    background-image: url('./img/3.jpg');
 }
 .el:nth-of-type(4) .el-bg{
-    background-image: url('picwall/img/4.jpg');
+    background-image: url(./img/6.jpg');
 }
 .el:nth-of-type(5) .el-bg{
-    background-image: url('picwall/img/4.jpg');
+    background-image: url('./img/5.jpg');
 }
 .el:nth-of-type(6) .el-bg{
-    background-image: url('picwall/img/4.jpg');
+    background-image: url('./img/6.jpg');
 }
 .el:nth-of-type(7) .el-bg{
-    background-image: url('picwall/img/4.jpg');
+    background-image: url('./img/7.jpg');
 }
 .el-title{
     position: absolute;
