@@ -1,7 +1,7 @@
 @import url('reset.css');
 body{
-	background:#ff7e7e;
-	color:#000;
+	background-image: url(http://image-otto.test.upcdn.net/bryan-goff-RF4p4rTM-2s-unsplash.jpg);
+	
 	font-family: Georgia, "Times New Roman",sans-serif;
 	font-size:12px;
 }
