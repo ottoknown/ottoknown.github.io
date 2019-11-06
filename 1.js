@@ -18,7 +18,7 @@ var browser = {
     language: (navigator.browserLanguage || navigator.language).toLowerCase()
 }
 if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
-    location.href="2.html"
+    location.href="index_mobile.html"
 }else{
-    location.href="1.html"
+    location.href="index.html"
 }
