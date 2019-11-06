@@ -20,5 +20,5 @@ var browser = {
 if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
     location.href="index_mobile.html"
 }else{
-    location.href="index.html"
+
 }
