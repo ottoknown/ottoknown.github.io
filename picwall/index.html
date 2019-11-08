@@ -1,23 +1,27 @@
+  
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>PicWall💗</title>
-  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-  <meta name="author" content="otto.known" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="css/style.css">
-</head>
-<body>
-<div id="particles-js"></div>
-<div class="content">
-    <header>
-      <h1>A Beautiful and silent world</h1>
-      <span>照片拍摄者：Mr.H & Mrs.W</span>
-    </header>
-    <div class="iw_wrapper">
-      <ul class="iw_thumbs" id="iw_thumbs">
-        <li><img src="https://i.loli.net/2019/10/23/RkO5SFXwWBoAZJC.jpg"/></li>
+    <head>
+        <title>这一路上的风景⛰</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Image Wall with jQuery and CSS3" />
+        <meta name="keywords" content="jquery, css3, images, wall, thumbnails, slide, animate"/>
+        <meta name="author" content="Codrops" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.css" />
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <h1>A Beautiful and silent world</h1>
+                <span>照片拍摄者：Mr.H & Mrs.W</span>
+            </header>
+            <div class="iw_wrapper">
+                <ul class="iw_thumbs" id="iw_thumbs">        <li><img src="https://i.loli.net/2019/10/23/RkO5SFXwWBoAZJC.jpg"/></li>
         <li><img src="https://i.loli.net/2019/10/23/3c74IvoiJ65NCle.jpg"/><li>
         <li><img src="https://i.loli.net/2019/10/23/8NRJaIWErPl9HXh.jpg"/></li>
         <li><img src="https://i.loli.net/2019/10/23/voPJLCsNDXhb4cj.jpg"/></li>
@@ -86,12 +90,18 @@
         <li><img src="https://s2.ax1x.com/2019/10/28/KcPh1H.jpg"></li>
         <li><img src="https://s2.ax1x.com/2019/10/28/KcPf9e.jpg"></li>
         <li><img src="https://s2.ax1x.com/2019/10/28/KcPRhD.jpg"></li>
-
-        
       </ul>
+      <script>
+        $(function(){
+            imglength = $('.iw_wrapper .iw_thumbs li').find('img').length;
+            for(i=0;i<imglength;i++){
+               obj = $(".iw_wrapper .iw_thumbs li img")[i];
+               aobj = $(obj).wrap("<a data-fancybox='gallery' no-pjax='' data-type='image' href='' id='fancybox" + i + "'></a>");
+               imghref = $(aobj).attr('src');
+               $('#fancybox' + i).attr('href',imghref);
+            }
+        });
+    </script>
   </div>
-<!-- scripts -->
-<script src="js/particles.min.js"></script>
-<script src="js/app.js"></script>
 </body>
 </html>
